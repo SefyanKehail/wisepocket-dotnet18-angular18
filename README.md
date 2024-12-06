@@ -7,7 +7,7 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
 ## 🚀 Features
 
 1. **Expense Management**  
-   - View, create, and delete expenses.
+   - View, create, and delete expenses and categories.
    
 2. **Monthly Budget Tracking**  
    - Set a monthly budget limit.
@@ -16,7 +16,7 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
 
 3. **Monthly Budget Analytics**  
    - Track budget limits for each month.
-   - Analyze current and historical spending data.
+   - Check current and historical spending data.
 
 ---
 
@@ -48,9 +48,9 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
    ```
 3. **Start the Angular development server:**
 
-  ```bash
-  ng serve
-  ```
+     ```bash
+     ng serve
+     ```
 4. **Open your browser and navigate to:**
 
      ```bash
