@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-card class="new-category-form" [formGroup]="newCategoryFormGroup">
+    <mat-card-header>
+      <mat-card-title>
+        New Category
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="save()" >Save</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

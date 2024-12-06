@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.expenses-card,
+.budget-card {
+  margin: 16px 10px;
+}
+
+.budget-card-mat {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.progress-bar-container {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .progress-bar-text {
+    position: absolute;
+    left: 25px;
+  }
+
+  .progress-info-text {
+    position: absolute;
+    right: 50px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right-column {
+}
+
+.green-text, .red-text {
+  color: inherit;
+  font-size: 1rem;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.expense-item {
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}

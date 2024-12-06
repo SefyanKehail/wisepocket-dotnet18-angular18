@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <img mat-card-image src="assets/wisepocket-logo.png" alt="wisepocket logo" width="50px" height="50px" >
+  <h1 class="logo-text"> &nbsp;WisePocket</h1>
+  <span style="min-width: 50px"></span>
+  <button mat-button routerLink="/home" routerLinkActive="active-link">Home</button>
+  <button mat-button routerLink="/expense" routerLinkActive="active-link">Expenses</button>
+  <button mat-button routerLink="/category" routerLinkActive="active-link">Categories</button>
+  <span style="flex: auto"></span>
+  <button mat-raised-button color="accent">Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>

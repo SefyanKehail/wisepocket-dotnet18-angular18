@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="left-column">
+    <mat-card class="budget-card">
+      <mat-card-header>
+        <mat-card-title >Budget Overview</mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content class="budget-card-mat">
+        <div class="progress-bar-container">
+          <mat-progress-spinner
+            mode="determinate"
+            [value]="budgetProgress"
+            diameter="240"
+            strokeWidth="10"
+            color="accent"
+          >
+          </mat-progress-spinner>
+          <p class="progress-bar-text" [ngClass]="{ 'green-text': currentSpent < budgetLimit, 'red-text': currentSpent >= budgetLimit }">
+            {{ currentSpent | currency }} <span style="color: black; font-size: 1.3em;"> / {{ budgetLimit | currency }} </span>
+          </p>
+        </div>
+        <p class="progress-info-text">
+          Consumed <span [ngClass]="{ 'green-text': currentSpent < budgetLimit, 'red-text': currentSpent >= budgetLimit }">{{ budgetProgress }}%</span> of the current monthly budget.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+  <div class="right-column">
+    <mat-card class="expenses-card">
+      <mat-card-header>
+        <mat-card-title>Recent Expenses</mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let expense of recentExpenses" class="expense-item">
+            <span mat-line>{{ expense.name }},</span>&nbsp;
+            <span mat-line>{{ expense.categoryName }},</span>&nbsp;
+            <span mat-line>{{ expense.date | date }},</span>&nbsp;
+            <span mat-line>{{ expense.amount | currency }}</span>&nbsp;
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
