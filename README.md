@@ -71,5 +71,4 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
 
 ## 📊 Future Improvements
 - Use a benchmarking tool to evaluate the performance of backend methods with larger datasets.
-- Add features such as expense categorization and graphical data analysis.
 
