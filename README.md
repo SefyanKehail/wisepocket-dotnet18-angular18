@@ -27,6 +27,7 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
 1. **Clone the repository and navigate to the backend folder**.  
 2. **Set up the database**:  
    - Create a database named `wisepocket-db`.
+   - Make sure you're in the backend/api directory.
    - Run the migration commands to set up the database schema:  
      ```bash
      dotnet ef database update
