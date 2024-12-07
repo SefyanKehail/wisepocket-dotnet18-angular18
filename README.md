@@ -34,7 +34,7 @@ An expense tracking application built with **Angular 18** (frontend) and **.NET 
      ```
 
 3. **Run the backend**:  
-   Start the backend with hot reload:  
+   Expose the backend:  
    ```bash
    dotnet watch run
    ```
